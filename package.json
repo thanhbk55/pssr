@@ -1,0 +1,13 @@
+{
+  "name": "pssr",
+  "version": "1.0.0",
+  "description": "Progressive Server Side Rendering",
+  "scripts": {
+    "start": "node src/app"
+  },
+  "author": "DinhDuyThanh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
