@@ -11,43 +11,43 @@ const wait = async function(time=500) {
 
 module.exports = {
   openHTML: async () =>
-    await loadHTML(__dirname + "/views/1-openHTML.html"),
+    await loadHTML(__dirname + "/1-openHTML.html"),
   head: async () =>
-    await loadHTML(__dirname + "/views/2-head.html"),
+    await loadHTML(__dirname + "/2-head.html"),
   openBody: async () =>
-    await loadHTML(__dirname + "/views/3-openBody.html"),
+    await loadHTML(__dirname + "/3-openBody.html"),
   header: async () =>
-    await loadHTML(__dirname + "/views/4-header.html"),
+    await loadHTML(__dirname + "/4-header.html"),
   contentOpen: async () =>
-    await loadHTML(__dirname + "/views/5-contentOpen.html"),
+    await loadHTML(__dirname + "/5-contentOpen.html"),
   sideLeft: async () => {
     await wait();
     return await loadHTML(
-      __dirname + "/views/6-sideLeft.html"
+      __dirname + "/6-sideLeft.html"
     );
   },
   main: async () => {
     await wait();
     return await loadHTML(
-      __dirname + "/views/7-main.html"
+      __dirname + "/7-main.html"
     );
   },
   sideRight: async () => {
     await wait();
     return await loadHTML(
-      __dirname + "/views/8-sideRight.html"
+      __dirname + "/8-sideRight.html"
     );
   },
   contentClose: async () =>
-    await loadHTML(__dirname + "/views/9-contentClose.html"),
+    await loadHTML(__dirname + "/9-contentClose.html"),
   footer: async () => {
     await wait();
     return await loadHTML(
-      __dirname + "/views/10-footer.html"
+      __dirname + "/10-footer.html"
     );
   },
   closeBody: async () =>
-    await loadHTML(__dirname + "/views/11-closeBody.html"),
+    await loadHTML(__dirname + "/11-closeBody.html"),
   closeHTML: async () =>
-    await loadHTML(__dirname + "/views/12-closeHTML.html")
+    await loadHTML(__dirname + "/12-closeHTML.html")
 };
