@@ -1,11 +1,10 @@
 const React = require('react');
-const Dummy = require("./dummy")
-module.exports = class Sample extends React.Component {
-  render(){
-    return (
-      <aside className="right">
-        <Dummy/>
-      </aside>
-    )
-  }
+const Dummy = require("./dummy");
+
+module.exports = function SideRight() {
+  return (
+    <aside className="right">
+      <Dummy/>
+    </aside>
+  )
 }

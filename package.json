@@ -3,14 +3,23 @@
   "version": "1.0.0",
   "description": "Progressive Server Side Rendering",
   "scripts": {
-    "start": "node src/app"
+    "start": "node src/index",
+    "build": "webpack --mode=production --entry=./src/react_views/app.js --output=./src/public/js/app.js"
   },
   "author": "DinhDuyThanh",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "node-jsx": "0.13.3",
     "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "node-jsx": "0.13.3"
+    "react-dom": "16.12.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6"
   }
 }

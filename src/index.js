@@ -44,6 +44,8 @@ app.get('/', async (req, res) => {
 })
 
 require('node-jsx').install({harmony: true});
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'public')));
 const React = require('react');
 const ReactDOMServer = require("react-dom/server");
 const App = require("./react_views/renderer");

@@ -6,21 +6,20 @@ const SideLeft = require('./sideLeft')
 const SideRight = require('./sideRight')
 const Footer = require('./footer')
 
-module.exports = class Sample extends React.Component {
-  render(){
-    return (
-      <html>
-        <Head/>
-        <body>
-          <Header/>
-          <div className="content">
-            <Main/>
-            <SideLeft/>
-            <SideRight/>
-          </div>
-          <Footer/>
-        </body>
-      </html>
-    )
-  }
+module.exports = function Renderer() {
+  return (
+    <html>
+      <Head/>
+      <body id="root">
+        <Header/>
+        <div className="content">
+          <Main/>
+          <SideLeft/>
+          <SideRight/>
+        </div>
+        <Footer/>
+        <script src="/js/app.js"></script>
+      </body>
+    </html>
+  )
 }
